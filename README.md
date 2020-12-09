@@ -2,6 +2,9 @@
 
 This is a collection of mini games like snake, minesweeper created using React-Hooks.
 
+# Start Playing 
+### [Here](https://jazzie-z.github.io/mini-games/)
+
 ## Available Scripts
 
 In the project directory, you can run:
