@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/mini-games/static/js/main.1f213fc5.chunk.js",
-    "main.js.map": "/mini-games/static/js/main.1f213fc5.chunk.js.map",
+    "main.js": "/mini-games/static/js/main.77d68a45.chunk.js",
+    "main.js.map": "/mini-games/static/js/main.77d68a45.chunk.js.map",
     "runtime-main.js": "/mini-games/static/js/runtime-main.234b4288.js",
     "runtime-main.js.map": "/mini-games/static/js/runtime-main.234b4288.js.map",
     "static/js/2.7188708a.chunk.js": "/mini-games/static/js/2.7188708a.chunk.js",
@@ -15,11 +15,13 @@
     "static/media/5.76293903.jpg": "/mini-games/static/media/5.76293903.jpg",
     "static/media/6.0e755c52.jpg": "/mini-games/static/media/6.0e755c52.jpg",
     "static/media/7.92d90997.jpg": "/mini-games/static/media/7.92d90997.jpg",
-    "static/media/8.3bebe736.jpg": "/mini-games/static/media/8.3bebe736.jpg"
+    "static/media/8.3bebe736.jpg": "/mini-games/static/media/8.3bebe736.jpg",
+    "static/media/explosion.39b0ef8e.gif": "/mini-games/static/media/explosion.39b0ef8e.gif",
+    "static/media/jet.0811f1a3.png": "/mini-games/static/media/jet.0811f1a3.png"
   },
   "entrypoints": [
     "static/js/runtime-main.234b4288.js",
     "static/js/2.7188708a.chunk.js",
-    "static/js/main.1f213fc5.chunk.js"
+    "static/js/main.77d68a45.chunk.js"
   ]
 }
