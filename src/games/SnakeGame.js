@@ -31,7 +31,7 @@ const SnakeGame = () => {
     const [appleConsumed, setAppleConsumed] = useState(0);
     const [gameOver, setGameOver] = useState(false)
     const generateApple = () => {
-        const newApple = Math.floor(Math.random() * 99);
+        const newApple = Math.floor(Math.random() * ((width * width) - 1));
         if (snake.includes(newApple)) {
             generateApple()
         } else {
