@@ -17,3 +17,13 @@ export const Title = styled.div`
     font-weight:bold;
     text-transform:uppercase;
 `
+export const Grid = styled.div`
+display:flex;
+flex-wrap:wrap;
+width: 400px;
+height: 400px;
+background: ${({ color }) => color || 'transparent'};
+overflow:hidden;
+position: relative;
+border: ${({ border }) => border?`1px solid ${border}`:'none'};
+`

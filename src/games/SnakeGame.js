@@ -1,12 +1,7 @@
 import { useEffect, useState } from 'react';
 import styled, { css } from 'styled-components';
-import { Button, Result } from 'components/common';
-const Grid = styled.div`
-width: 400px;
-display:flex;
-flex-wrap:wrap;
-background: #253243;
-`
+import { Button, Grid, Result } from 'components/common';
+
 const Snake = css`
 background:orange;
 border-radius:50%;
@@ -115,8 +110,9 @@ const SnakeGame = () => {
             window.addEventListener('keydown', keyHandler)
         return () => window.removeEventListener('keydown', keyHandler)
     }, [direction, gameOver, snake])
-    return <div><Grid>
+    return <div><Grid color={'#253243'}>
         {[...new Array(width * width)].map((e, i) => <Box
+            key={i}
             isSnake={snake.includes(i)}
             isApple={i === apple} ></Box>)}
     </Grid>

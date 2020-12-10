@@ -1,19 +1,10 @@
-import { Button, Result } from 'components/common'
+import { Button, Grid, Result } from 'components/common'
 import React, { useEffect, useState } from 'react'
 import styled, { css } from 'styled-components'
 import AlienImage from 'assets/images/alien.png'
 import Jet from 'assets/images/jet.png'
 import ExplosionGif from 'assets/images/explosion.gif'
-const Container = styled.div``
-const Grid = styled.div`
-display:flex;
-flex-wrap:wrap;
-width: 400px;
-height: 400px;
-border:1px solid;
-background:black;
-overflow:hidden;
-`
+
 const Shooter = css`
     background-image:url(${Jet});
     background-size: cover;
@@ -146,9 +137,10 @@ const SpaceInvaders = () => {
         setStart(prev => !prev)
     }
     return (
-        <Container>
-            <Grid>
+        <div>
+            <Grid color={'black'}>
                 {[...Array(width * width)].map((e, i) => <Cell
+                    key={i}
                     isInvader={alienGroup.includes(i)}
                     isShooter={shooterIndex === i}
                     isLaser={laserIndex === i}
@@ -158,7 +150,7 @@ const SpaceInvaders = () => {
             <Button onClick={toggleGame}>{start ? 'STOP' : 'Start'}</Button>
             {gameOver ? <Result>{gameOver}</Result> : ''}
             <div>your score : {totalAlien - alienGroup.length}</div>
-        </Container>
+        </div>
     )
 }
 

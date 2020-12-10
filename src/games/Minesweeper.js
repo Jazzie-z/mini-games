@@ -1,15 +1,7 @@
-import { Button, Result } from 'components/common'
+import { Button, Grid, Result } from 'components/common'
 import React, { useEffect, useState } from 'react'
 import styled, { css } from 'styled-components'
 
-const Grid = styled.div`
-height: 400px;
-width: 400px;
-display:flex;
-flex-wrap:wrap;
-background:#115481;
-border:1px solid;
-`
 const Bomb = css`
     background:orange;
     font-size: 48px;
@@ -165,7 +157,7 @@ const Minesweeper = () => {
     }, [gameOver])
     return (
         <div>
-            <Grid>
+            <Grid color={'#115481'}> 
                 {squares.map(({ value, show, dash }, i) => <Block key={i}
                     isBomb={value === '*'}
                     dash={dash}

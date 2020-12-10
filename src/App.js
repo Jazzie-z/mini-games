@@ -1,9 +1,11 @@
 import { Title } from 'components/common';
+import ChromeDino from 'games/ChromeDino';
 import JumpSlide from 'games/JumpSlide';
 import { MemoryGame } from 'games/MemoryGame';
 import Minesweeper from 'games/Minesweeper';
 import SnakeGame from 'games/SnakeGame';
 import SpaceInvaders from 'games/SpaceInvaders';
+import TicTacToe from 'games/TicTacToe';
 import styled from 'styled-components';
 
 const Grid = styled.div`
@@ -14,25 +16,25 @@ font-family: sans-serif;
   margin: 10px;
 }
 `
-const Container = styled.div`
-`
-window.addEventListener("keydown", function(e) {
+window.addEventListener("keydown", function (e) {
   // disable arrow keys scrolling
   if (["ArrowRight", "ArrowLeft", "ArrowUp", "ArrowDown",].includes(e.key)) {
-      e.preventDefault();
+    e.preventDefault();
   }
 }, false);
 
 const App = () => {
   const games = [
-    { title: 'Snake Game', Game: <SnakeGame/> },
-    { title: 'Minesweeper', Game: <Minesweeper/> },
+    { title: 'Snake Game', Game: <SnakeGame /> },
+    { title: 'Minesweeper', Game: <Minesweeper /> },
     // { title: 'Jump Slide', Game: <JumpSlide/> },
-    { title: 'Memory Game', Game: <MemoryGame/> },
-    { title: 'Space Invaders', Game: <SpaceInvaders/> }
+    { title: 'Memory Game', Game: <MemoryGame /> },
+    { title: 'Space Invaders', Game: <SpaceInvaders /> },
+    { title: 'Tic Tac Toe', Game: <TicTacToe /> },
+    { title: 'Chrome Dino', Game: <ChromeDino /> },
   ]
   return (<Grid>
-    {games.map(({title,Game})=><Container key={title}><Title>{title}</Title>{Game}</Container>)}
+    {games.map(({ title, Game }) => <div key={title}><Title>{title}</Title>{Game}</div>)}
   </Grid>)
 }
 

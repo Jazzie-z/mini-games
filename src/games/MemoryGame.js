@@ -8,14 +8,8 @@ import Image6 from 'assets/images/6.jpg'
 import Image7 from 'assets/images/7.jpg'
 import Image8 from 'assets/images/8.jpg'
 import styled, { css } from 'styled-components'
-import { Button, Result } from 'components/common'
+import { Button, Grid, Result } from 'components/common'
 
-const Container = styled.div``
-const Grid = styled.div`
-display:flex;
-flex-wrap:wrap;
-width: 400px;
-`
 const Hide = css`
     transform: rotateY(180deg);
 `
@@ -121,7 +115,7 @@ export const MemoryGame = () => {
         setStart(prev => !prev)
     }
     return (
-        <Container>
+        <div>
             <Grid>
                 {imageArray.map(({ path, id }, index) => (
                     <Card key={index} hide={hide} onClick={() => clickHandler(index)}
@@ -133,6 +127,6 @@ export const MemoryGame = () => {
             {start ? <Time>Remaining Time : {time}</Time> : ''}
             <Button onClick={stopGame}>{start ? 'STOP' : 'START'}</Button>
             {gameOver ? <Result>{gameOver} !!!<div>Your score : {visibleArray.length}</div></Result> : ''}
-        </Container>
+        </div>
     )
 }
