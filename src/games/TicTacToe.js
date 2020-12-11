@@ -21,6 +21,7 @@ const Block = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
 const TicTacToe = () => {
   const [squares, setSquares] = useState([]);
   const [xIsNext, setxIsNext] = useState();

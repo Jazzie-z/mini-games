@@ -6,7 +6,9 @@ import { MemoryGame } from "games/MemoryGame";
 import Minesweeper from "games/Minesweeper";
 import SnakeGame from "games/SnakeGame";
 import SpaceInvaders from "games/SpaceInvaders";
+import Tetris from "games/Tetris";
 import TicTacToe from "games/TicTacToe";
+import Tenet from "games/Tenet";
 import styled from "styled-components";
 
 const Grid = styled.div`
@@ -38,6 +40,8 @@ const App = () => {
     { title: "Tic Tac Toe", Game: <TicTacToe /> },
     { title: "Chrome Dino", Game: <ChromeDino /> },
     { title: "Flappy Bird", Game: <FlappyBird /> },
+    // { title: "Tetris", Game: <Tetris /> },
+    { title: "Tenet", Game: <Tenet /> },
   ];
   return (
     <Grid>
