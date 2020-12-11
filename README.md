@@ -9,7 +9,7 @@ This is a collection of mini games like snake, minesweeper created using React-H
 ## Screenshots
 
 <p>
-<img src="snapshot/games.PNG" alt="drawing" width="600"/>
+<img src="snapshot/games.PNG" alt="drawing"/>
 </p>
 
 ## Available Scripts
