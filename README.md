@@ -4,7 +4,13 @@ This is a collection of mini games like snake, minesweeper created using React-H
 
 # Start Playing
 
-### [Here](https://jazzie-z.github.io/mini-games/)
+### [Click Here to play](https://jazzie-z.github.io/mini-games/)
+
+## Screenshots
+
+<p>
+<img src="snapshot/games.png" alt="drawing" width="600"/>
+</p>
 
 ## Available Scripts
 

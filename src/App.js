@@ -42,7 +42,7 @@ const App = () => {
     { title: "Flappy Bird", Game: <FlappyBird /> },
     { title: "Tetris", Game: <Tetris /> },
     { title: "Tenet", Game: <Tenet /> },
-  ];
+  ]
   return (
     <Grid>
       {games.map(({ title, Game }) => (
