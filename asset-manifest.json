@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/mini-games/static/js/main.d23e0d8c.chunk.js",
-    "main.js.map": "/mini-games/static/js/main.d23e0d8c.chunk.js.map",
+    "main.js": "/mini-games/static/js/main.bb6d1557.chunk.js",
+    "main.js.map": "/mini-games/static/js/main.bb6d1557.chunk.js.map",
     "runtime-main.js": "/mini-games/static/js/runtime-main.234b4288.js",
     "runtime-main.js.map": "/mini-games/static/js/runtime-main.234b4288.js.map",
-    "static/js/2.5c28ea00.chunk.js": "/mini-games/static/js/2.5c28ea00.chunk.js",
-    "static/js/2.5c28ea00.chunk.js.map": "/mini-games/static/js/2.5c28ea00.chunk.js.map",
+    "static/js/2.0feffe29.chunk.js": "/mini-games/static/js/2.0feffe29.chunk.js",
+    "static/js/2.0feffe29.chunk.js.map": "/mini-games/static/js/2.0feffe29.chunk.js.map",
     "index.html": "/mini-games/index.html",
-    "static/js/2.5c28ea00.chunk.js.LICENSE.txt": "/mini-games/static/js/2.5c28ea00.chunk.js.LICENSE.txt",
+    "static/js/2.0feffe29.chunk.js.LICENSE.txt": "/mini-games/static/js/2.0feffe29.chunk.js.LICENSE.txt",
     "static/media/1.cbd5b7c2.jpg": "/mini-games/static/media/1.cbd5b7c2.jpg",
     "static/media/2.d99d27ed.jpg": "/mini-games/static/media/2.d99d27ed.jpg",
     "static/media/3.6cfda385.jpg": "/mini-games/static/media/3.6cfda385.jpg",
@@ -18,16 +18,21 @@
     "static/media/8.3bebe736.jpg": "/mini-games/static/media/8.3bebe736.jpg",
     "static/media/batman.6a22df64.gif": "/mini-games/static/media/batman.6a22df64.gif",
     "static/media/bird.84353ebc.gif": "/mini-games/static/media/bird.84353ebc.gif",
+    "static/media/char_blue.978fd540.png": "/mini-games/static/media/char_blue.978fd540.png",
+    "static/media/char_red.2cc00630.png": "/mini-games/static/media/char_red.2cc00630.png",
     "static/media/city.2d50639c.png": "/mini-games/static/media/city.2d50639c.png",
+    "static/media/door.6e4fd337.png": "/mini-games/static/media/door.6e4fd337.png",
+    "static/media/exit.e3d47dd5.png": "/mini-games/static/media/exit.e3d47dd5.png",
     "static/media/explosion.39b0ef8e.gif": "/mini-games/static/media/explosion.39b0ef8e.gif",
     "static/media/grassland.366a4449.jpg": "/mini-games/static/media/grassland.366a4449.jpg",
     "static/media/jet.0811f1a3.png": "/mini-games/static/media/jet.0811f1a3.png",
     "static/media/joker.809c12d0.jfif": "/mini-games/static/media/joker.809c12d0.jfif",
-    "static/media/laser.aefc9fe1.mp3": "/mini-games/static/media/laser.aefc9fe1.mp3"
+    "static/media/laser.aefc9fe1.mp3": "/mini-games/static/media/laser.aefc9fe1.mp3",
+    "static/media/time_machine.83b24cd6.png": "/mini-games/static/media/time_machine.83b24cd6.png"
   },
   "entrypoints": [
     "static/js/runtime-main.234b4288.js",
-    "static/js/2.5c28ea00.chunk.js",
-    "static/js/main.d23e0d8c.chunk.js"
+    "static/js/2.0feffe29.chunk.js",
+    "static/js/main.bb6d1557.chunk.js"
   ]
 }
