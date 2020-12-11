@@ -20,8 +20,8 @@ export const Title = styled.div`
 export const Grid = styled.div`
   display: flex;
   flex-wrap: wrap;
-  width: 400px;
-  height: 400px;
+  width: ${({ width }) => width || 400}px;
+  height: ${({ height }) => height || 400}px;
   background: ${({ color }) => color || "transparent"};
   overflow: hidden;
   position: relative;

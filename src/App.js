@@ -10,6 +10,7 @@ import Tetris from "games/Tetris";
 import TicTacToe from "games/TicTacToe";
 import Tenet from "games/Tenet";
 import styled from "styled-components";
+import Pacman from "games/Pacman";
 
 const Grid = styled.div`
   display: flex;
@@ -42,6 +43,7 @@ const App = () => {
     { title: "Flappy Bird", Game: <FlappyBird /> },
     { title: "Tetris", Game: <Tetris /> },
     { title: "Tenet", Game: <Tenet /> },
+    { title: "Pacman", Game: <Pacman /> },
   ]
   return (
     <Grid>
