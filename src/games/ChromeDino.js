@@ -69,18 +69,18 @@ const ChromeDino = () => {
     if (jump) {
       //going up
       jumpTimer = setTimeout(() => {
-        let newBottom = bottom + 30;
+        let newBottom = bottom + 15;
         newBottom *= gravity;
         setBottom(newBottom);
       }, 20);
-      if (bottom > 200) {
+      if (bottom > 120) {
         clearTimeout(jumpTimer);
         setJump(false);
       }
     } else if (bottom > 0) {
       // coming down
       jumpTimer = setTimeout(() => {
-        let newBottom = bottom - 30 < 0 ? 0 : bottom - 30;
+        let newBottom = bottom - 10 < 0 ? 0 : bottom - 10;
         newBottom *= gravity;
         setBottom(newBottom);
       }, 20);
