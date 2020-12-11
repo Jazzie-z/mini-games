@@ -76,7 +76,7 @@ const Tetris = () => {
   const [start, setStart] = useState(false);
   const createNewBlock = (size) => {
     let tetrominoes = getTerminoes(size);
-    let randomIndex = Math.floor(Math.random() * (tetrominoes.length));
+    let randomIndex = Math.floor(Math.random() * tetrominoes.length);
     if (size === width) setTetrominoType(randomIndex);
     return tetrominoes[randomIndex][rotation];
   };

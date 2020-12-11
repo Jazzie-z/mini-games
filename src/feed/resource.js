@@ -1,4 +1,4 @@
-
+// prettier-ignore
 export const layout = [
     1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
     1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
@@ -30,10 +30,9 @@ export const layout = [
     1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
 ]
 export const legends = {
-    pacDots: 0,
-    wall: 1,
-    ghostLair: 2,
-    powerPellet: 3,
-    empty: 4,
-}
-
+  pacDots: 0,
+  wall: 1,
+  ghostLair: 2,
+  powerPellet: 3,
+  empty: 4,
+};
