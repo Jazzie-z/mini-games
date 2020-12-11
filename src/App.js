@@ -40,7 +40,7 @@ const App = () => {
     { title: "Tic Tac Toe", Game: <TicTacToe /> },
     { title: "Chrome Dino", Game: <ChromeDino /> },
     { title: "Flappy Bird", Game: <FlappyBird /> },
-    // { title: "Tetris", Game: <Tetris /> },
+    { title: "Tetris", Game: <Tetris /> },
     { title: "Tenet", Game: <Tenet /> },
   ];
   return (

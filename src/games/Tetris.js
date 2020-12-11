@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styled, { css } from 'styled-components'
-import { Grid } from 'components/common'
+import { Button, Grid } from 'components/common'
 
 const Cell = styled.div`
     width: 20px;
@@ -62,15 +62,17 @@ const getTerminoes = (width) => {
     return [lTetromino, zTetromino, tTetromino, oTetromino, iTetromino]
 }
 let blockTimer = null
+let counter = 0
 const Tetris = () => {
     const width = 20;
     const displayWidth = 4;
     const [cells, setCells] = useState([...Array(400)].map(() => ({})))
     const [block, setBlock] = useState({ index: [] })
-    const [nextTermino, setNextTermino] = useState({index:[]})
+    const [nextTermino, setNextTermino] = useState({ index: [] })
     const [position, setPosition] = useState(0);
     const [rotation, setRotation] = useState(0);
     const [tetrominoType, setTetrominoType] = useState('')
+    const [start, setStart] = useState(false)
     const createNewBlock = (size) => {
         let tetrominoes = getTerminoes(size)
         let randomIndex = Math.floor(Math.random() * (tetrominoes.length - 1))
@@ -92,7 +94,7 @@ const Tetris = () => {
             console.error(nextTermino)
             setBlock({ ...nextTermino, index: createNewBlock(width).map(e => position + e) })
             setNextTermino({ index: createNewBlock(displayWidth), colors: getRandomColor() })
-        } else {            
+        } else {
             console.error(getRandomColor())
             setBlock({ index: createNewBlock(width).map(e => position + e), colors: getRandomColor() })
             setNextTermino({ index: createNewBlock(displayWidth), colors: getRandomColor() })
@@ -114,8 +116,24 @@ const Tetris = () => {
         let isBlockPresent = block.index.some(i => cells[i + width] && cells[i + width].colors);
         return isLastRowReached || isBlockPresent
     }
+    const generateRandomNumber = () => {
+        let randomNumber = Math.floor(Math.random() * (width - 2));
+        if (counter === 20) {
+            setStart(false)
+            randomNumber=0
+            counter=0
+        }
+        if (cells[randomNumber].colors || 
+            (cells[randomNumber + 1]&& cells[randomNumber + 1].colors) ||
+            (cells[randomNumber - 1] && cells[randomNumber - 1].colors) || 
+            cells[randomNumber + width].colors) {
+            counter++
+            generateRandomNumber()
+        }
+        return randomNumber;
+    }
     useEffect(() => {
-        if (block.index.length) {
+        if (start && block.index.length) {
             blockTimer = setTimeout(() => {
                 let newBlock = { ...block };
                 newBlock.index = newBlock.index.map(e => e + width)
@@ -123,24 +141,26 @@ const Tetris = () => {
                 setBlock(newBlock)
             }, 500)
             if (isBottomReached()) {
-                clearTimeout(blockTimer)                
-                setPosition(Math.floor(Math.random() * (width - 2)))
-                setTimeout(()=>{
+                clearTimeout(blockTimer)
+                setPosition(generateRandomNumber())
+                setTimeout(() => {
                     let newCells = [...cells];
-                    block.index.forEach(i => newCells[i] = { colors: block.colors })                    
+                    block.index.forEach(i => newCells[i] = { colors: block.colors })
                     setBlock({ index: [] })
                     setCells(newCells)
-                } ,100)               
+                }, 100)
             }
-        } else {
-            generateNewBlock()
+        } else if (start) {
+            let firstRow = cells.filter((e, i) => i < 20 && e.colors);
+            if(!firstRow.length)
+                generateNewBlock()
         }
         return () => clearTimeout(blockTimer)
-    }, [block])
+    }, [start, block])
     const getRandomColor = () => randomColors[Math.floor(Math.random() * (randomColors.length - 1))]
     const moveRight = () => {
         const rightEdge = block.index.find((e) => e % width === width - 1);
-        const cellPresent = block.index.some(e => cells[e + 1].colors)
+        const cellPresent = block.index.some(e => cells[e + 1] && cells[e + 1].colors)
         if (!rightEdge && block.index && !cellPresent) {
             let newBlock = { ...block }
             newBlock.index = newBlock.index.map(e => e + 1)
@@ -150,7 +170,7 @@ const Tetris = () => {
     }
     const moveLeft = () => {
         const leftEdge = block.index.find((e) => e % width === 0);
-        const cellPresent = block.index.some(e => cells[e - 1].colors)
+        const cellPresent = block.index.some(e => cells[e - 1] && cells[e - 1].colors)
         if (!leftEdge && block.index && !cellPresent) {
             let newBlock = { ...block }
             newBlock.index = newBlock.index.map(e => e - 1)
@@ -161,14 +181,14 @@ const Tetris = () => {
     const rotate = () => {
         let currentRotation = rotation + 1
         if (currentRotation === block.index.length) {
-          currentRotation = 0
+            currentRotation = 0
         }
         setRotation(currentRotation)
         setBlock(prev => ({ ...prev, index: getTerminoes(width)[tetrominoType][currentRotation].map(e => e + position) }))
     }
     const keyHandler = (e) => {
         switch (e.key) {
-            case 'ArrowLeft':moveLeft()
+            case 'ArrowLeft': moveLeft()
                 break;
             case 'ArrowRight': moveRight()
                 break;
@@ -177,9 +197,10 @@ const Tetris = () => {
         }
     }
     useEffect(() => {
-        window.addEventListener('keydown', keyHandler)
+        if (start)
+            window.addEventListener('keydown', keyHandler)
         return () => window.removeEventListener('keydown', keyHandler)
-    },[block])
+    }, [block, start])
     useEffect(() => {
         let validRows = []
         for (let i = 0; i < width; i++) {
@@ -190,7 +211,7 @@ const Tetris = () => {
                     break
                 }
             }
-            if (isComplete) validRows.push(i+1)
+            if (isComplete) validRows.push(i + 1)
         }
         console.error(validRows)
         if (validRows.length) {
@@ -205,12 +226,27 @@ const Tetris = () => {
             }, 1000)
         }
     }, [cells])
+    const togglegame = () => {
+        if (start) setStart(false)
+        else {
+            setCells([...Array(400)].map(() => ({})))
+            setBlock({ index: [] })
+            setNextTermino({ index: [] })
+            setPosition(0);
+            setRotation(0);
+            setTetrominoType('')
+            setStart(true)
+        }
+    }
     return (
+        <div>
         <Grid color={'#0f1d38'}>
             {cells.map(({ colors }, i) => (<Cell
                 key={i}
-                colors={colors || block.index.includes(i) && block.colors}></Cell>))}
+                colors={colors || block.index.includes(i) && block.colors}></Cell>))}            
         </Grid>
+        <Button onClick={togglegame}>{start ? 'Stop' : 'Start'}</Button>
+        </div>
     )
 }
 
