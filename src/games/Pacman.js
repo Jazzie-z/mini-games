@@ -209,7 +209,6 @@ const PacMan = () => {
       </Grid>
       <Button onClick={toggleGame}>{start ? "Stop" : "Start"}</Button>
       {score}
-      {energize}
       {gameOver ? <Result>{gameOver}</Result> : ""}
     </div>
   );
