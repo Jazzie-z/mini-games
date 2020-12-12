@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/mini-games/static/js/main.640ffbf8.chunk.js",
-    "main.js.map": "/mini-games/static/js/main.640ffbf8.chunk.js.map",
+    "main.js": "/mini-games/static/js/main.b5d564ff.chunk.js",
+    "main.js.map": "/mini-games/static/js/main.b5d564ff.chunk.js.map",
     "runtime-main.js": "/mini-games/static/js/runtime-main.234b4288.js",
     "runtime-main.js.map": "/mini-games/static/js/runtime-main.234b4288.js.map",
     "static/js/2.0feffe29.chunk.js": "/mini-games/static/js/2.0feffe29.chunk.js",
@@ -18,9 +18,17 @@
     "static/media/8.3bebe736.jpg": "/mini-games/static/media/8.3bebe736.jpg",
     "static/media/batman.6a22df64.gif": "/mini-games/static/media/batman.6a22df64.gif",
     "static/media/bird.84353ebc.gif": "/mini-games/static/media/bird.84353ebc.gif",
+    "static/media/candy_1.18f692a5.png": "/mini-games/static/media/candy_1.18f692a5.png",
+    "static/media/candy_2.535d3490.png": "/mini-games/static/media/candy_2.535d3490.png",
+    "static/media/candy_3.9459c338.png": "/mini-games/static/media/candy_3.9459c338.png",
+    "static/media/candy_4.b23001ac.png": "/mini-games/static/media/candy_4.b23001ac.png",
+    "static/media/candy_5.71b972b1.png": "/mini-games/static/media/candy_5.71b972b1.png",
+    "static/media/candy_6.9211b7ca.png": "/mini-games/static/media/candy_6.9211b7ca.png",
     "static/media/char_blue.978fd540.png": "/mini-games/static/media/char_blue.978fd540.png",
     "static/media/char_red.2cc00630.png": "/mini-games/static/media/char_red.2cc00630.png",
     "static/media/city.2d50639c.png": "/mini-games/static/media/city.2d50639c.png",
+    "static/media/confetti.b1a83761.gif": "/mini-games/static/media/confetti.b1a83761.gif",
+    "static/media/cupcake_bg.863a4efc.jpg": "/mini-games/static/media/cupcake_bg.863a4efc.jpg",
     "static/media/door.6e4fd337.png": "/mini-games/static/media/door.6e4fd337.png",
     "static/media/exit.e3d47dd5.png": "/mini-games/static/media/exit.e3d47dd5.png",
     "static/media/explosion.39b0ef8e.gif": "/mini-games/static/media/explosion.39b0ef8e.gif",
@@ -33,6 +41,6 @@
   "entrypoints": [
     "static/js/runtime-main.234b4288.js",
     "static/js/2.0feffe29.chunk.js",
-    "static/js/main.640ffbf8.chunk.js"
+    "static/js/main.b5d564ff.chunk.js"
   ]
 }
