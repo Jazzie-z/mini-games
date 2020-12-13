@@ -187,7 +187,6 @@ const CandyCrush = () => {
         if (!newCandyArray[i].id) {
           let newIndex = getNextNonEmptyIndex(newCandyArray, i);
           if (newIndex !== -1) {
-            console.error("swapping", shouldChange);
             shouldChange = [newIndex, i];
             newCandyArray[i] = newCandyArray[newIndex];
             newCandyArray[newIndex] = {};
@@ -213,9 +212,7 @@ const CandyCrush = () => {
 
   useEffect(() => {
     if (shake.length) {
-      console.error("will clear");
       shakeTimer = setTimeout(() => {
-        console.error("clearing");
         setShake([]);
       }, 200);
     }

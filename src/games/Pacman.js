@@ -188,14 +188,14 @@ const PacMan = () => {
         {cells.map((e, i) => {
           if (i === pacman)
             return (
-              <PacManChar rotate={getRotationDeg(direction)}>
+              <PacManChar key={i} rotate={getRotationDeg(direction)}>
                 <img src={PacmanImg} />
               </PacManChar>
             );
           let ghost = ghosts.find((e) => e.index === i);
           if (ghost)
             return (
-              <Alien>
+              <Alien key={i}>
                 <img src={energize ? GhostImg : ghost.img} />
               </Alien>
             );

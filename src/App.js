@@ -12,6 +12,8 @@ import Tenet from "games/Tenet";
 import styled from "styled-components";
 import Pacman from "games/Pacman";
 import CandyCrush from "games/CandyCrush";
+import Temp from "games/Temp";
+import The2048 from "games/The2048";
 
 const Grid = styled.div`
   display: flex;
@@ -46,6 +48,7 @@ const App = () => {
     { title: "Tenet", Game: <Tenet /> },
     { title: "Pacman", Game: <Pacman /> },
     { title: "Candy Crush", Game: <CandyCrush /> },
+    { title: "2048", Game: <The2048 /> },
   ];
   return (
     <Grid>

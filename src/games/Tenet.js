@@ -179,7 +179,6 @@ const Tenet = () => {
   useEffect(() => {
     if (!fall) {
       let ceilPos = ceiling.filter((e) => e.bottom === 248).length;
-      console.error("ceilPos", ceilPos, bottom, bottom < 256);
       if (ceilPos === ceiling.length && bottom < 256)
         setGameOver("FAILED! Try again");
     }
