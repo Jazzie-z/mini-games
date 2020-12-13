@@ -14,6 +14,7 @@ import Pacman from "games/Pacman";
 import CandyCrush from "games/CandyCrush";
 import Temp from "games/Temp";
 import The2048 from "games/The2048";
+import { AngryBird } from "games/AngryBird";
 
 const Grid = styled.div`
   display: flex;
@@ -49,6 +50,7 @@ const App = () => {
     { title: "Pacman", Game: <Pacman /> },
     { title: "Candy Crush", Game: <CandyCrush /> },
     { title: "2048", Game: <The2048 /> },
+    { title: "Angry Bird", Game: <AngryBird /> },
   ];
   return (
     <Grid>
