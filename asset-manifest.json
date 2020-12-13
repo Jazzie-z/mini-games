@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/mini-games/static/js/main.3da11642.chunk.js",
-    "main.js.map": "/mini-games/static/js/main.3da11642.chunk.js.map",
+    "main.js": "/mini-games/static/js/main.53c8e1d1.chunk.js",
+    "main.js.map": "/mini-games/static/js/main.53c8e1d1.chunk.js.map",
     "runtime-main.js": "/mini-games/static/js/runtime-main.234b4288.js",
     "runtime-main.js.map": "/mini-games/static/js/runtime-main.234b4288.js.map",
-    "static/js/2.0feffe29.chunk.js": "/mini-games/static/js/2.0feffe29.chunk.js",
-    "static/js/2.0feffe29.chunk.js.map": "/mini-games/static/js/2.0feffe29.chunk.js.map",
+    "static/js/2.aa3125bf.chunk.js": "/mini-games/static/js/2.aa3125bf.chunk.js",
+    "static/js/2.aa3125bf.chunk.js.map": "/mini-games/static/js/2.aa3125bf.chunk.js.map",
     "index.html": "/mini-games/index.html",
-    "static/js/2.0feffe29.chunk.js.LICENSE.txt": "/mini-games/static/js/2.0feffe29.chunk.js.LICENSE.txt",
+    "static/js/2.aa3125bf.chunk.js.LICENSE.txt": "/mini-games/static/js/2.aa3125bf.chunk.js.LICENSE.txt",
     "static/media/1.cbd5b7c2.jpg": "/mini-games/static/media/1.cbd5b7c2.jpg",
     "static/media/2.d99d27ed.jpg": "/mini-games/static/media/2.d99d27ed.jpg",
     "static/media/3.6cfda385.jpg": "/mini-games/static/media/3.6cfda385.jpg",
@@ -16,8 +16,10 @@
     "static/media/6.0e755c52.jpg": "/mini-games/static/media/6.0e755c52.jpg",
     "static/media/7.92d90997.jpg": "/mini-games/static/media/7.92d90997.jpg",
     "static/media/8.3bebe736.jpg": "/mini-games/static/media/8.3bebe736.jpg",
+    "static/media/angry_bird.11caf867.png": "/mini-games/static/media/angry_bird.11caf867.png",
     "static/media/batman.6a22df64.gif": "/mini-games/static/media/batman.6a22df64.gif",
     "static/media/bird.84353ebc.gif": "/mini-games/static/media/bird.84353ebc.gif",
+    "static/media/bird_bg.c767fb0b.jpg": "/mini-games/static/media/bird_bg.c767fb0b.jpg",
     "static/media/candy_1.18f692a5.png": "/mini-games/static/media/candy_1.18f692a5.png",
     "static/media/candy_2.535d3490.png": "/mini-games/static/media/candy_2.535d3490.png",
     "static/media/candy_3.9459c338.png": "/mini-games/static/media/candy_3.9459c338.png",
@@ -43,7 +45,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.234b4288.js",
-    "static/js/2.0feffe29.chunk.js",
-    "static/js/main.3da11642.chunk.js"
+    "static/js/2.aa3125bf.chunk.js",
+    "static/js/main.53c8e1d1.chunk.js"
   ]
 }
