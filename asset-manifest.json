@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/mini-games/static/js/main.b5d564ff.chunk.js",
-    "main.js.map": "/mini-games/static/js/main.b5d564ff.chunk.js.map",
+    "main.js": "/mini-games/static/js/main.3da11642.chunk.js",
+    "main.js.map": "/mini-games/static/js/main.3da11642.chunk.js.map",
     "runtime-main.js": "/mini-games/static/js/runtime-main.234b4288.js",
     "runtime-main.js.map": "/mini-games/static/js/runtime-main.234b4288.js.map",
     "static/js/2.0feffe29.chunk.js": "/mini-games/static/js/2.0feffe29.chunk.js",
@@ -35,12 +35,15 @@
     "static/media/grassland.366a4449.jpg": "/mini-games/static/media/grassland.366a4449.jpg",
     "static/media/jet.0811f1a3.png": "/mini-games/static/media/jet.0811f1a3.png",
     "static/media/joker.809c12d0.jfif": "/mini-games/static/media/joker.809c12d0.jfif",
+    "static/media/ladder.e8cd3779.png": "/mini-games/static/media/ladder.e8cd3779.png",
     "static/media/laser.aefc9fe1.mp3": "/mini-games/static/media/laser.aefc9fe1.mp3",
+    "static/media/runningman.4636208d.gif": "/mini-games/static/media/runningman.4636208d.gif",
+    "static/media/standingman.387ce320.gif": "/mini-games/static/media/standingman.387ce320.gif",
     "static/media/time_machine.83b24cd6.png": "/mini-games/static/media/time_machine.83b24cd6.png"
   },
   "entrypoints": [
     "static/js/runtime-main.234b4288.js",
     "static/js/2.0feffe29.chunk.js",
-    "static/js/main.b5d564ff.chunk.js"
+    "static/js/main.3da11642.chunk.js"
   ]
 }
